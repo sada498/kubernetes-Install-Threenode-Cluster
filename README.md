@@ -1,5 +1,8 @@
 # kubernetes-Install-Threenode-Cluster
 How to Install Three node K8s cluster for on premise or local Virtual Machine for Ubuntu 
+
+![Image of kubernetes](https://github.com/sada498/kubernetes-Install-Threenode-Cluster/blob/master/kubernetes.PNG)
+
 ## Run below commands on all nodes to configure the k8s 
 ### Get the Docker gpg key
   ```
