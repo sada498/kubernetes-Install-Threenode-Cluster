@@ -46,6 +46,8 @@ How to Install Three node K8s cluster for on premise or local Virtual Machine fo
   ```
   sudo kubeadm init --pod-network-cidr=10.244.0.0/16
   ```
+  ![Image of kube join](https://github.com/sada498/kubernetes-Install-Threenode-Cluster/blob/master/kube%20join.png)
+  copy the kube join command for join the worker node into cluster. use this command only on worker nodes 
 ### Set up local kubeconfig
   ```
   mkdir -p $HOME/.kube
@@ -57,4 +59,13 @@ How to Install Three node K8s cluster for on premise or local Virtual Machine fo
   kubectl apply -f https://docs.projectcalico.org/v3.14/manifests/calico.yaml
   ```
 ## join the worker nodes into master node only run this command in worker node 
+![Image of kube join to worker node ](https://github.com/sada498/kubernetes-Install-Threenode-Cluster/blob/master/worker%20node%20join.PNG)
+
+## Finally, check the master for worker nodes.
+  ```
+   alias kc=kubectl
+   kc get nodes
+  ```
+  ![Image of master](https://github.com/sada498/kubernetes-Install-Threenode-Cluster/blob/master/kc%20get%20nodes.png)
+
 
